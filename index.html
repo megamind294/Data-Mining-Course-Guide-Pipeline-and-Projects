@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4f0">
+    <meta name="description" content="An interactive home for five data mining learning tracks and 23 hands-on project workspaces.">
+    <title>Fieldnotes — Data Mining Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#" id="home-link" aria-label="Fieldnotes home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>fieldnotes<span class="brand-dot">.</span><small>DATA MINING STUDIO</small></span>
+        </a>
+
+        <div class="side-label">WORKSPACE</div>
+        <button class="nav-link is-active" id="nav-projects" type="button">
+          <span class="nav-icon" aria-hidden="true">◫</span> Project library <span class="nav-count">23</span>
+        </button>
+        <button class="nav-link" id="nav-overview" type="button">
+          <span class="nav-icon" aria-hidden="true">⌂</span> Overview
+        </button>
+
+        <div class="side-label track-label">LEARNING TRACKS <span>05</span></div>
+        <nav class="track-nav" id="track-nav" aria-label="Learning tracks"></nav>
+
+        <div class="sidebar-bottom">
+          <div class="sidebar-note">
+            <span class="note-icon" aria-hidden="true">✳</span>
+            <strong>Learn by making.</strong>
+            <p>Five tracks. Real-world questions. One place to explore them all.</p>
+          </div>
+          <div class="profile">
+            <div class="avatar">DM</div>
+            <span><strong>Data explorer</strong><small>LEARNER WORKSPACE</small></span>
+            <span class="profile-more" aria-hidden="true">···</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="breadcrumbs" id="breadcrumbs"><span>Workspace</span><b>/</b><strong>Project library</strong></div>
+          <div class="topbar-right">
+            <span class="environment"><i></i> DEMO ENVIRONMENT</span>
+            <button class="icon-button" id="help-button" type="button" aria-label="About this workspace">?</button>
+          </div>
+        </header>
+        <div id="app" class="page-content" tabindex="-1"></div>
+        <footer class="site-footer"><span>FIELDNOTES <i>·</i> DATA MINING STUDIO</span><span>Learn openly. Analyze thoughtfully.</span></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
