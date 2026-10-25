@@ -7,29 +7,29 @@ const tracks = [
 ];
 
 const projects = [
-  { id: "job-listings", track: 1, name: "Web Scraping of Job Listings", description: "Explore hiring demand by role, location, salary, and the skills employers request.", tags: ["Web scraping", "Pandas"], sample: "jobs", objective: "Find the roles and skills appearing most often across a sample of job listings." },
-  { id: "news-headlines", track: 1, name: "News Headlines Analyzer", description: "Compare headline topics across publishers and discover the words appearing most often.", tags: ["Text analysis", "Frequency"], sample: "headlines", objective: "Compare publisher coverage and surface recurring words in a sample of headlines." },
-  { id: "price-tracker", track: 1, name: "Product Price Tracker", description: "Follow sample product prices across dates and see how costs change over time.", tags: ["Web scraping", "Time series"], sample: "prices", objective: "Compare current sample prices and the price movement recorded over time." },
-  { id: "weather-analysis", track: 1, name: "Weather Data Collection and Analysis", description: "Explore sample weather observations to compare temperature and rainfall by city.", tags: ["Public API", "Exploratory analysis"], sample: "weather", objective: "Summarize observed temperature and rainfall across cities in the sample." },
-  { id: "public-health", track: 1, name: "Public Health Data Dashboard", description: "Turn sample public health records into a clear regional and time-based overview.", tags: ["Open data", "Dashboard"], sample: "health", objective: "Compare reported cases across health topics in the illustrative dataset." },
-  { id: "social-trends", track: 2, name: "Social Media Trend Analysis", description: "Compare topic mentions and engagement in an illustrative social listening dataset.", tags: ["API data", "Engagement"], sample: "social", objective: "Identify the topics attracting the most mentions and interactions in the sample." },
-  { id: "movie-insights", track: 2, name: "Movie Recommendation Insights", description: "Explore ratings and genres to understand what viewers like in sample movie data.", tags: ["Ratings", "Visualization"], sample: "movies", objective: "Compare average movie ratings across genres in the sample." },
-  { id: "stock-mining", track: 2, name: "Stock Market Data Mining", description: "Review illustrative daily prices, volumes, and change to understand market movement.", tags: ["Market data", "Time series"], sample: "stocks", objective: "Summarize daily price observations and trading volume in the sample dataset." },
-  { id: "review-sentiment", track: 2, name: "Online Review Sentiment Analysis", description: "Inspect sample customer reviews and their sentiment labels by product.", tags: ["Text analysis", "Reviews"], sample: "reviews", objective: "Compare the provided positive, neutral, and negative review labels." },
-  { id: "academic-publications", track: 2, name: "Academic Publication Mining", description: "Explore publication topics, years, authors, and citations in a sample research catalog.", tags: ["Research", "Trend analysis"], sample: "papers", objective: "Find the most frequent research topics in the illustrative publication sample." },
-  { id: "realtime-monitor", track: 3, name: "Real-Time Web Data Monitoring System", description: "Inspect timestamped sample observations and identify monitored sources and changes.", tags: ["Monitoring", "Database"], sample: "monitor", objective: "Review recent metric observations by source in this static sample." },
-  { id: "selenium-scraper", track: 3, name: "Dynamic Content Scraper with Selenium", description: "Explore sample records shaped like paginated dynamic content and inspect their categories.", tags: ["Selenium", "Dynamic pages"], sample: "scraped", objective: "Inspect the sample records and category distribution from a dynamic-page workflow." },
-  { id: "price-comparison", track: 3, name: "Web-Based Price Comparison Engine", description: "Compare sample vendor listings and find the lowest price for each product.", tags: ["Normalization", "Comparison"], sample: "vendors", objective: "Compare each product across vendors and surface the cheapest listed option." },
-  { id: "news-recommendations", track: 3, name: "News Article Recommendation System", description: "Explore sample articles grouped by topic to see how a topic-based recommender can work.", tags: ["Clustering", "Recommendations"], sample: "articles", objective: "Group the sample articles by topic to demonstrate a simple recommendation signal." },
-  { id: "fake-news", track: 3, name: "Fake News Detection Using Web-Mined Data", description: "Review a labeled sample dataset and examine the distribution of its example classes.", tags: ["NLP", "Classification"], sample: "labeledNews", objective: "Inspect example class balance; labels are illustrative and are not fact checks." },
-  { id: "automated-pipeline", track: 4, name: "Automated Web Data Pipeline", description: "Follow sample pipeline runs through collection, validation, and data quality checks.", tags: ["Automation", "Logging"], sample: "pipeline", objective: "Compare sample pipeline run volume and quality results." },
-  { id: "web-to-sql", track: 4, name: "Web Data to SQL Database System", description: "Explore example records prepared for storage and analysis in a relational database.", tags: ["SQL", "Data integration"], sample: "sql", objective: "Summarize the sample records by data source and inspect storage-ready fields." },
-  { id: "api-aggregation", track: 4, name: "API Aggregation Platform", description: "Review sample records from multiple APIs and compare their values and source coverage.", tags: ["APIs", "Integration"], sample: "aggregation", objective: "Compare contributed records by API source in this mock aggregation." },
-  { id: "market-intelligence", track: 5, name: "Large-Scale Web Data Mining for Market Intelligence", description: "Explore sample products, prices, and reviews to see how market signals can be combined.", tags: ["Market intelligence", "Reviews"], sample: "market", objective: "Compare products using sample price and review signals." },
-  { id: "smart-cities", track: 5, name: "Open Data Mining for Smart Cities", description: "Explore illustrative traffic, air quality, and energy indicators across city districts.", tags: ["Open data", "Smart cities"], sample: "cities", objective: "Compare sample city districts across traffic, air-quality, and energy measures." },
-  { id: "healthcare-mining", track: 5, name: "Healthcare Web Data Mining System", description: "Inspect fictional healthcare indicators for careful, high-level trend exploration.", tags: ["Healthcare", "Public data"], sample: "healthcare", objective: "Compare illustrative hospital indicators; this is not medical advice or actual health data." },
-  { id: "education-analytics", track: 5, name: "Education Analytics Using Web-Mined Data", description: "Explore example enrollment, completion, and course data to find education patterns.", tags: ["Education", "Analytics"], sample: "education", objective: "Compare sample enrollment by course and inspect completion outcomes." },
-  { id: "research-trends", track: 5, name: "Research Trend Detection System", description: "Explore a sample publication timeline and identify topics gaining attention.", tags: ["Research", "Topic trends"], sample: "trends", objective: "Compare sample publication counts by research topic and year." }
+  { id: "job-listings", track: 1, name: "Web Scraping of Job Listings", description: "Explore hiring demand by role, location, and the skills employers request.", tags: ["Job API", "Pandas"], sample: "jobs", objective: "Find recurring roles, locations, and skill tags in current remote job listings." },
+  { id: "news-headlines", track: 1, name: "News Headlines Analyzer", description: "Collect current headlines and discover recurring words and topics.", tags: ["RSS", "Text analysis"], sample: "headlines", objective: "Analyze current headlines and surface recurring terms and topics." },
+  { id: "price-tracker", track: 1, name: "Product Price Tracker", description: "Track demo catalog prices across collection times and visualize changes.", tags: ["Product API", "Time series"], sample: "prices", objective: "Compare demo-catalog prices across timestamped snapshots; values are not retailer prices." },
+  { id: "weather-analysis", track: 1, name: "Weather Data Collection and Analysis", description: "Collect a city forecast and compare temperature and rainfall.", tags: ["Public API", "Exploratory analysis"], sample: "weather", objective: "Summarize forecast temperature and rainfall for the selected location." },
+  { id: "public-health", track: 1, name: "Public Health Data Dashboard", description: "Explore country-level public health indicators from open data.", tags: ["Open data", "Dashboard"], sample: "health", objective: "Review historical country-level life expectancy indicators from the World Bank." },
+  { id: "social-trends", track: 2, name: "Social Media Trend Analysis", description: "Compare recent Hacker News story points and comment engagement.", tags: ["Hacker News", "Engagement"], sample: "social", objective: "Explore topics, story points, and comment counts in Hacker News search results." },
+  { id: "movie-insights", track: 2, name: "Movie Recommendation Insights", description: "Explore Studio Ghibli film scores, directors, and release years.", tags: ["Ratings", "Visualization"], sample: "movies", objective: "Compare catalog RT scores (0–100) across directors in the Studio Ghibli film catalog." },
+  { id: "stock-mining", track: 2, name: "Stock Market Data Mining", description: "Review historical daily prices and volumes to understand market movement.", tags: ["Market data", "Time series"], sample: "stocks", objective: "Summarize historical daily prices and trading volume for the selected ticker." },
+  { id: "review-sentiment", track: 2, name: "Online Review Sentiment Analysis", description: "Score review text with a transparent, local word-list baseline.", tags: ["Text analysis", "Reviews"], sample: "reviews", objective: "Estimate the entered review's polarity with an explainable word-list baseline." },
+  { id: "academic-publications", track: 2, name: "Academic Publication Mining", description: "Search publication topics, years, authors, and citation counts.", tags: ["OpenAlex", "Trend analysis"], sample: "papers", objective: "Explore publication topics, authors, years, and citations in OpenAlex search results." },
+  { id: "realtime-monitor", track: 3, name: "Real-Time Web Data Monitoring System", description: "Poll a public news feed and compare saved snapshots over time.", tags: ["Monitoring", "SQLite"], sample: "monitor", objective: "Collect and compare timestamped RSS snapshots while this workspace is open." },
+  { id: "selenium-scraper", track: 3, name: "Dynamic Content Scraper with Selenium", description: "Use Selenium to read JavaScript-rendered content from a practice site.", tags: ["Selenium", "Dynamic pages"], sample: "scraped", objective: "Filter quotes rendered by a browser on a JavaScript practice site." },
+  { id: "price-comparison", track: 3, name: "Web-Based Price Comparison Engine", description: "Search and compare current prices across products in a demo catalog.", tags: ["Normalization", "Comparison"], sample: "vendors", objective: "Compare displayed demo-catalog product prices; the catalog is not a multi-retailer offer feed." },
+  { id: "news-recommendations", track: 3, name: "News Article Recommendation System", description: "Rank current feed articles against a topic you enter.", tags: ["Text matching", "Recommendations"], sample: "articles", objective: "Rank current articles by simple word overlap with the selected topic." },
+  { id: "fake-news", track: 3, name: "Fake News Detection Using Web-Mined Data", description: "Filter recent fact-check articles from two public publisher feeds.", tags: ["Fact-check feeds", "RSS"], sample: "labeledNews", objective: "Explore recent fact-check articles by topic; this workflow does not verify a claim or search the full archive." },
+  { id: "automated-pipeline", track: 4, name: "Automated Web Data Pipeline", description: "Collect a public feed on demand or every 60 seconds and persist each run.", tags: ["Automation", "SQLite"], sample: "pipeline", objective: "Collect RSS records, analyze the run, and persist snapshots in the local database." },
+  { id: "web-to-sql", track: 4, name: "Web Data to SQL Database System", description: "Collect feed records, store them in SQLite, and inspect saved runs.", tags: ["SQLite", "Data integration"], sample: "sql", objective: "Store collected RSS records in SQLite and reload prior rows for analysis." },
+  { id: "api-aggregation", track: 4, name: "API Aggregation Platform", description: "Merge location-matched weather and air-quality API data.", tags: ["APIs", "Integration"], sample: "aggregation", objective: "Combine forecast and air-quality observations for a selected location." },
+  { id: "market-intelligence", track: 5, name: "Large-Scale Web Data Mining for Market Intelligence", description: "Explore demo product prices, ratings, categories, and review counts.", tags: ["Market intelligence", "Product API"], sample: "market", objective: "Compare price and rating signals in a demo product catalog, not live market offers." },
+  { id: "smart-cities", track: 5, name: "Open Data Mining for Smart Cities", description: "Explore public air-quality measurements for a selected city.", tags: ["Open data", "Air quality"], sample: "cities", objective: "Compare air-quality measurements over time; this source does not include traffic or energy." },
+  { id: "healthcare-mining", track: 5, name: "Healthcare Web Data Mining System", description: "Explore country-level health indicators without patient-level data.", tags: ["World Bank", "Public data"], sample: "healthcare", objective: "Explore life-expectancy indicators; the dataset is not hospital or patient data and is not medical advice." },
+  { id: "education-analytics", track: 5, name: "Education Analytics Using Web-Mined Data", description: "Analyze historical country-level school enrollment indicators.", tags: ["World Bank", "Education"], sample: "education", objective: "Explore secondary school enrollment trends from the World Bank." },
+  { id: "research-trends", track: 5, name: "Research Trend Detection System", description: "Search recent research records and compare publication metadata.", tags: ["OpenAlex", "Topic trends"], sample: "trends", objective: "Explore publication years, topics, authors, and citations in OpenAlex search results." }
 ];
 
 const samples = {
@@ -62,7 +62,7 @@ const app = document.querySelector("#app");
 const trackNav = document.querySelector("#track-nav");
 const breadcrumb = document.querySelector("#breadcrumbs");
 const toastElement = document.querySelector("#toast");
-const state = { page: "home", track: null, project: null, rows: [], headers: [], result: null, search: "" };
+const state = { page: "home", track: null, project: null, rows: [], headers: [], result: null, search: "", dataSource: "", sourceMessage: "", monitorTimer: null };
 let toastTimeout;
 
 function escapeHtml(value) {
@@ -93,6 +93,7 @@ function updateBreadcrumb() {
 }
 
 function navigateTrack(trackId) {
+  stopAutomaticCollection();
   state.page = "track";
   state.track = trackId;
   state.project = null;
@@ -104,12 +105,15 @@ function navigateTrack(trackId) {
 function openProject(projectId) {
   const project = projects.find((candidate) => candidate.id === projectId);
   if (!project) return;
+  stopAutomaticCollection();
   state.page = "workspace";
   state.track = project.track;
   state.project = project;
   state.headers = samples[project.sample][0];
   state.rows = samples[project.sample].slice(1).map((row) => [...row]);
   state.result = null;
+  state.dataSource = "";
+  state.sourceMessage = "";
   render();
   window.scrollTo(0, 0);
   runAnalysis();
@@ -122,7 +126,7 @@ function renderHome() {
     : projects;
   app.innerHTML = `
     <div class="hero-row">
-      <div><div class="eyebrow">THE FIELD GUIDE · 2026 EDITION</div><h1 class="page-title">Good questions start<br>with good data.</h1><p class="page-description">A hands-on guide to finding, shaping, and understanding data from the open web. Choose a learning track, then open any project to explore its workflow.</p></div>
+      <div><div class="eyebrow">THE FIELD GUIDE · 2026 EDITION</div><h1 class="page-title">Good questions start<br>with good data.</h1><p class="page-description">A hands-on guide to finding, shaping, and understanding data from the open web. Choose a learning track, run a project's configured data workflow, and analyze the results.</p></div>
       <div class="hero-stats"><div class="hero-stat"><strong>05</strong><span>Learning tracks</span></div><i class="stat-divider"></i><div class="hero-stat"><strong>${totalProjects}</strong><span>Project ideas</span></div><i class="stat-divider"></i><div class="hero-stat"><strong>01</strong><span>Workspace</span></div></div>
     </div>
     <div class="section-heading"><h2>Choose your learning track</h2><span>01 — 05</span></div>
@@ -159,23 +163,59 @@ function renderWorkspace() {
   const project = state.project;
   const track = currentTrack(project.track);
   const fileInputId = "csv-upload";
+  const sourceInputs = {
+    "job-listings": ["Search jobs", "e.g. data analyst"],
+    "news-headlines": ["Optional topic filter", "e.g. climate"],
+    "price-tracker": ["Search demo catalog", "e.g. phone"],
+    "weather-analysis": ["City or town", "e.g. London"],
+    "public-health": ["3-letter ISO country code", "e.g. GBR"],
+    "social-trends": ["Search Hacker News stories", "e.g. data science"],
+    "movie-insights": ["Studio Ghibli title or director", "e.g. Spirited Away, or leave blank for all films"],
+    "stock-mining": ["Stock ticker", "e.g. aapl"],
+    "review-sentiment": ["Review text", "Type or paste a review"],
+    "academic-publications": ["Research search", "e.g. data mining"],
+    "realtime-monitor": ["Optional feed filter", "e.g. science"],
+    "selenium-scraper": ["Optional quote filter", "e.g. life"],
+    "price-comparison": ["Search demo catalog", "e.g. phone"],
+    "news-recommendations": ["Topic to recommend", "e.g. climate"],
+    "fake-news": ["Filter recent fact-check articles", "e.g. climate, or leave blank for recent articles"],
+    "automated-pipeline": ["Optional feed filter", "e.g. science"],
+    "web-to-sql": ["Optional feed filter", "e.g. science"],
+    "api-aggregation": ["City or town", "e.g. London"],
+    "market-intelligence": ["Search demo catalog", "e.g. phone"],
+    "smart-cities": ["City or town", "e.g. London"],
+    "healthcare-mining": ["3-letter ISO country code", "e.g. GBR"],
+    "education-analytics": ["3-letter ISO country code", "e.g. GBR"],
+    "research-trends": ["Research search", "e.g. data mining"]
+  }[project.id];
+  const hasSavedRuns = ["price-tracker", "realtime-monitor", "automated-pipeline", "web-to-sql"].includes(project.id);
+  const supportsAutomaticCollection = ["realtime-monitor", "automated-pipeline"].includes(project.id);
   app.innerHTML = `
     <div class="workspace-top">
       <div><div class="eyebrow">PROJECT WORKSPACE · TRACK 0${track.id}</div><h1 class="page-title">${escapeHtml(project.name)}</h1><p class="page-description">${escapeHtml(project.description)}</p>
-        <div class="workspace-meta"><span class="tag green">SAMPLE WORKFLOW</span>${project.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
+        <div class="workspace-meta"><span class="tag green">DATA WORKFLOW</span>${project.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
       </div>
-      <button class="launch-button" id="run-analysis" type="button"><span aria-hidden="true">▶</span> Run analysis</button>
+      <div class="workspace-actions"><button class="launch-button" id="collect-live" type="button"><span aria-hidden="true">▶</span> Run workflow</button><button class="subtle-button" id="run-analysis" type="button">Run analysis</button></div>
     </div>
+    <section class="source-controls" aria-label="Live data source">
+      <label for="source-query">${escapeHtml(sourceInputs[0])}</label>
+      <input id="source-query" type="text" maxlength="300" placeholder="${escapeHtml(sourceInputs[1])}" autocomplete="off">
+      <div class="source-control-actions">
+        ${hasSavedRuns ? '<button class="subtle-button" id="load-history" type="button">View saved runs</button>' : ""}
+        ${supportsAutomaticCollection ? `<button class="subtle-button" id="toggle-automation" type="button">${state.monitorTimer ? "Stop 60s refresh" : "Start 60s refresh"}</button>` : ""}
+      </div>
+      <p id="collection-status" role="status">${escapeHtml(state.monitorTimer ? "Automatic collection runs every 60 seconds while this workspace remains open." : state.sourceMessage || "Sample data is loaded. Run the workflow with the entered input to use this project's configured source or analysis.")}</p>
+    </section>
     <div class="workspace-grid">
       <section class="panel data-panel" aria-label="Project data">
-        <div class="panel-heading"><h2>Working dataset</h2><span>LOCAL DEMO DATA</span></div>
+        <div class="panel-heading"><h2>Working dataset</h2><span id="source-label">${escapeHtml(state.dataSource || "SAMPLE DATA")}</span></div>
         <div class="data-toolbar"><span class="data-count" id="data-count"></span><div class="toolbar-actions"><label class="subtle-button" for="${fileInputId}">↑ &nbsp; Upload CSV<input id="${fileInputId}" type="file" accept=".csv,text/csv"></label><button class="subtle-button" data-action="sample" type="button">Reset sample</button></div></div>
         <div class="table-scroll" id="table-container"></div>
-        <div class="drop-hint">Your file stays in this browser tab. Upload a CSV with a header row to analyze your own data.</div>
+        <div class="drop-hint">CSV uploads are analyzed in this browser and are not sent to the server.</div>
       </section>
       <section class="panel insight-panel" aria-label="Analysis metrics">
         <div class="panel-heading"><h2>At a glance</h2><span>DATA CHECK</span></div>
-        <div class="insight-intro">An initial read of the active dataset. Upload your own CSV or run the project to refresh the analysis.</div>
+        <div class="insight-intro">Collect from the project's data source or upload your own CSV, then run the analysis.</div>
         <div class="metric-stack" id="metrics"><div class="empty-dataset">Run an analysis to see the data checks.</div></div>
         <div class="insight-callout">${escapeHtml(project.objective)}</div>
       </section>
@@ -190,7 +230,7 @@ function renderWorkspace() {
 function renderOverview() {
   app.innerHTML = `
     <div class="eyebrow">YOUR FIELD GUIDE</div><h1 class="page-title">Overview</h1><p class="page-description">A single studio for learning how data moves from a source to a useful insight.</p>
-    <section class="overview-banner"><div class="eyebrow">FROM FIRST SCRAPE TO REAL-WORLD INSIGHT</div><h2>Five tracks. Twenty-three ways to get curious.</h2><p>Pick a track to see its projects. Every project opens in a shared workspace with an example dataset, a quick analysis, and the option to upload your own CSV.</p></section>
+    <section class="overview-banner"><div class="eyebrow">FROM FIRST SCRAPE TO REAL-WORLD INSIGHT</div><h2>Five tracks. Twenty-three ways to get curious.</h2><p>Pick a track to see its projects. Each workspace offers a project workflow, illustrative sample data, an analysis view, and the option to upload your own CSV.</p></section>
     <div class="overview-metrics"><div class="overview-metric"><strong>05</strong><span>CONNECTED LEARNING TRACKS</span></div><div class="overview-metric"><strong>23</strong><span>PROJECT WORKSPACES</span></div><div class="overview-metric"><strong>CSV</strong><span>BRING YOUR OWN DATA</span></div></div>
     <div class="section-heading"><h2>Learning tracks</h2><span>SELECT A TRACK TO BEGIN</span></div><div class="tracks-grid">${tracks.map((track) => `<button class="track-card" data-track="${track.id}" type="button"><span class="card-topline"><span class="card-number">TRACK 0${track.id}</span><span class="card-arrow">↗</span></span><h3>${escapeHtml(track.title)}</h3><p>${escapeHtml(track.short)}</p><span class="card-count">${projects.filter((project) => project.track === track.id).length} projects&nbsp; →</span></button>`).join("")}</div>`;
 }
@@ -205,7 +245,14 @@ function renderTable() {
     return;
   }
   const visibleRows = state.rows.slice(0, 9);
-  container.innerHTML = `<table class="data-table"><thead><tr>${state.headers.map((header) => `<th>${escapeHtml(header)}</th>`).join("")}</tr></thead><tbody>${visibleRows.map((row) => `<tr>${state.headers.map((_, column) => `<td title="${escapeHtml(row[column] ?? "")}">${escapeHtml(row[column] ?? "")}</td>`).join("")}</tr>`).join("")}</tbody></table>${state.rows.length > visibleRows.length ? `<div class="drop-hint">Showing 9 of ${state.rows.length} records.</div>` : ""}`;
+  container.innerHTML = `<table class="data-table"><thead><tr>${state.headers.map((header) => `<th>${escapeHtml(header)}</th>`).join("")}</tr></thead><tbody>${visibleRows.map((row) => `<tr>${state.headers.map((header, column) => {
+    const value = String(row[column] ?? "");
+    const safeValue = escapeHtml(value);
+    const cell = /url|link/i.test(header) && /^https?:\/\/\S+$/i.test(value)
+      ? `<a href="${safeValue}" target="_blank" rel="noopener noreferrer">Open source</a>`
+      : safeValue;
+    return `<td title="${safeValue}">${cell}</td>`;
+  }).join("")}</tr>`).join("")}</tbody></table>${state.rows.length > visibleRows.length ? `<div class="drop-hint">Showing 9 of ${state.rows.length} records.</div>` : ""}`;
 }
 
 function parseCsv(text) {
@@ -285,7 +332,9 @@ function summarizeDomain(project, headers, rows, metrics) {
       if (chartValues.length) bullets.push(`“${chartValues[0][0]}” is the most common label in the supplied sample.`);
     }
   } else if (["job-listings","news-headlines"].includes(projectId)) {
-    const textColumn = findHeader(/skill|headline|review|title/i);
+    const textColumn = projectId === "job-listings"
+      ? findHeader(/skill|tag/i)
+      : findHeader(/headline|review|title/i);
     if (textColumn >= 0) {
       const frequencies = new Map();
       rows.forEach((row) => text(row[textColumn]).toLowerCase().match(/[a-z][a-z+#.-]{2,}/g)?.forEach((word) => {
@@ -331,21 +380,21 @@ function summarizeDomain(project, headers, rows, metrics) {
   }
   if (["weather-analysis","public-health","healthcare-mining","smart-cities","education-analytics","movie-insights","social-trends","academic-publications","research-trends","news-recommendations","selenium-scraper","api-aggregation","automated-pipeline","web-to-sql","realtime-monitor","stock-mining"].includes(projectId)) {
     const preferred = {
-      "weather-analysis": /city/i, "public-health": /topic|disease/i, "healthcare-mining": /hospital/i,
-      "smart-cities": /district/i, "education-analytics": /course/i, "movie-insights": /genre/i,
-      "social-trends": /topic/i, "academic-publications": /topic/i, "research-trends": /topic/i,
-      "news-recommendations": /topic/i, "selenium-scraper": /category/i, "api-aggregation": /api source/i,
+      "weather-analysis": /city/i, "public-health": /year/i, "healthcare-mining": /year/i,
+      "smart-cities": /timestamp/i, "education-analytics": /year/i, "movie-insights": /director|genre/i,
+      "social-trends": /topic/i, "academic-publications": /topic/i, "research-trends": /year/i,
+      "news-recommendations": /topic/i, "selenium-scraper": /category/i,
       "automated-pipeline": /source/i, "web-to-sql": /source/i, "realtime-monitor": /source/i,
-      "stock-mining": /date/i
+      "stock-mining": /date/i, "api-aggregation": /date/i
     }[projectId];
     const chosen = findHeader(preferred);
     const numberPattern = {
-      "weather-analysis": /temperature/i, "public-health": /cases/i, "healthcare-mining": /admissions/i,
-      "smart-cities": /traffic/i, "education-analytics": /enrollments/i, "movie-insights": /rating/i,
-      "social-trends": /mentions/i, "academic-publications": /citations/i, "research-trends": /publications/i,
-      "news-recommendations": null, "selenium-scraper": /price/i, "api-aggregation": /records/i,
+      "weather-analysis": /temperature/i, "public-health": /life expectancy/i, "healthcare-mining": /life expectancy/i,
+      "smart-cities": /pm2\.5|pm10/i, "education-analytics": /enrollment|gross/i, "movie-insights": /rt score|rating/i,
+      "social-trends": /score/i, "academic-publications": /citations/i, "research-trends": null,
+      "news-recommendations": null, "selenium-scraper": /price/i,
       "automated-pipeline": /records/i, "web-to-sql": /value/i, "realtime-monitor": /value/i,
-      "stock-mining": /close/i
+      "stock-mining": /close/i, "api-aggregation": /temperature/i
     }[projectId];
     const numCol = numberPattern ? findHeader(numberPattern) : -1;
     if (chosen >= 0) {
@@ -378,8 +427,8 @@ function summarizeDomain(project, headers, rows, metrics) {
   const currencyValues = currencyColumn < 0 ? [] : findNumeric(/price|cost|salary/i);
   const average = currencyValues.length ? currencyValues.reduce((sum, value) => sum + value, 0) / currencyValues.length : metrics.mean;
   if (average !== null && !chartValues.length) bullets.push(`The average of the first numeric field, ${headers[metrics.numericColumn]}, is ${average.toLocaleString(undefined, { maximumFractionDigits: 2 })}.`);
-  if (projectId === "fake-news") bullets.push("Example labels show a dataset category, not a verified judgement about whether a story is true.");
-  if (projectId === "healthcare-mining") bullets.push("These fictional demo values are for data-practice only and should not inform healthcare decisions.");
+  if (projectId === "fake-news") bullets.push("Recent publisher articles match the entered topic; matches do not verify a claim. Read the linked reviews.");
+  if (projectId === "healthcare-mining") bullets.push("These country-level indicators are not hospital or patient records and should not inform individual healthcare decisions.");
   if (!bullets.length) bullets.push("Review the displayed records and field completeness before drawing conclusions from the dataset.");
   return { chartValues, chartTitle, bullets, average };
 }
@@ -412,7 +461,10 @@ function runAnalysis() {
     }
   }
   const summary = document.querySelector("#summary");
-  if (summary) summary.innerHTML = `<p>${escapeHtml(state.project.objective)}</p><p><strong>${state.rows.length} sample records</strong> across ${state.headers.length} fields; ${metrics.completeness}% of cells are populated.</p>${domain.bullets.map((bullet) => `<p>${escapeHtml(bullet)}</p>`).join("")}<p>Sample data is illustrative, not live or authoritative. Validate data sources, definitions, and context before using findings in a report.</p>`;
+  const datasetDescription = state.dataSource ? "collected records" : "sample records";
+  const sourceMessage = state.sourceMessage ? `<p>${escapeHtml(state.sourceMessage)}</p>` : "";
+  const sampleDisclaimer = state.dataSource ? "" : "<p>Sample data is illustrative, not live or authoritative.</p>";
+  if (summary) summary.innerHTML = `<p>${escapeHtml(state.project.objective)}</p><p><strong>${state.rows.length} ${datasetDescription}</strong> across ${state.headers.length} fields; ${metrics.completeness}% of cells are populated.</p>${domain.bullets.map((bullet) => `<p>${escapeHtml(bullet)}</p>`).join("")}${sourceMessage}${sampleDisclaimer}<p>Validate source definitions, coverage, and context before using findings in a report.</p>`;
   showToast(`Analysis complete · ${state.rows.length} records checked`);
 }
 
@@ -433,15 +485,17 @@ function render() {
 }
 
 document.addEventListener("click", (event) => {
-  const target = event.target.closest("[data-track], [data-project], [data-action], #nav-overview, #nav-projects, #home-link, #help-button, #run-analysis");
+  const target = event.target.closest("[data-track], [data-project], [data-action], #nav-overview, #nav-projects, #home-link, #help-button, #run-analysis, #collect-live, #load-history, #toggle-automation");
   if (!target) return;
   if (target.matches("[data-track]")) navigateTrack(Number(target.dataset.track));
   else if (target.matches("[data-project]")) openProject(target.dataset.project);
   else if (target.matches("[data-action='home'], #home-link, #nav-projects")) {
     event.preventDefault();
+    stopAutomaticCollection();
     state.page = "home"; state.track = null; state.project = null; state.search = ""; render();
     window.scrollTo(0, 0);
   } else if (target.matches("#nav-overview")) {
+    stopAutomaticCollection();
     state.page = "overview"; state.track = null; state.project = null; render();
     window.scrollTo(0, 0);
   } else if (target.matches("[data-action='sample']")) {
@@ -449,11 +503,16 @@ document.addEventListener("click", (event) => {
     state.headers = samples[state.project.sample][0];
     state.rows = samples[state.project.sample].slice(1).map((row) => [...row]);
     state.result = null;
+    state.dataSource = "";
+    state.sourceMessage = "";
     render();
     runAnalysis();
     showToast("Sample dataset restored.");
   } else if (target.matches("#run-analysis")) runAnalysis();
-  else if (target.matches("#help-button")) showToast("Demo data is illustrative. Upload a CSV to explore your own data locally.");
+  else if (target.matches("#collect-live")) collectLiveData(target);
+  else if (target.matches("#load-history")) loadSavedHistory(target);
+  else if (target.matches("#toggle-automation")) toggleAutomaticCollection(target);
+  else if (target.matches("#help-button")) showToast("Collect data from the project's source, or upload a CSV for local-only analysis.");
 });
 
 document.addEventListener("input", (event) => {
@@ -476,6 +535,8 @@ document.addEventListener("change", async (event) => {
     state.headers = parsed.headers;
     state.rows = parsed.rows;
     state.result = null;
+    state.dataSource = "LOCAL CSV";
+    state.sourceMessage = "Uploaded CSV processed locally in this browser; it was not sent to the server.";
     render();
     runAnalysis();
     showToast(`Loaded ${state.rows.length} records from ${file.name}`);
@@ -484,6 +545,103 @@ document.addEventListener("change", async (event) => {
   }
   event.target.value = "";
 });
+
+async function collectLiveData(button) {
+  if (!state.project || button.disabled) return;
+  const project = state.project;
+  const query = document.querySelector("#source-query")?.value.trim() ?? "";
+  const status = document.querySelector("#collection-status");
+  button.disabled = true;
+  button.textContent = "Running…";
+  if (status) status.textContent = "Running the project's data workflow…";
+  try {
+    const response = await fetch(`/api/collect/${encodeURIComponent(project.id)}?${new URLSearchParams({ query })}`);
+    const payload = await response.json();
+    if (!response.ok) throw new Error(payload.error || `Data collection failed (HTTP ${response.status}).`);
+    if (!Array.isArray(payload.headers) || !Array.isArray(payload.rows) || payload.rows.length === 0) {
+      throw new Error("The source returned no usable records.");
+    }
+    if (state.project?.id !== project.id) return;
+    state.headers = payload.headers;
+    state.rows = payload.rows;
+    state.dataSource = payload.source || "LIVE DATA";
+    state.sourceMessage = payload.message || `Collected ${payload.rows.length} records.`;
+    render();
+    runAnalysis();
+    showToast(`Workflow complete · ${payload.rows.length} records`);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Data collection failed.";
+    if (status && state.project?.id === project.id) status.textContent = message;
+    showToast(message);
+  } finally {
+    if (state.project?.id === project.id) {
+      const collectButton = document.querySelector("#collect-live");
+      if (collectButton) {
+        collectButton.disabled = false;
+        collectButton.innerHTML = '<span aria-hidden="true">▶</span> Run workflow';
+      }
+    }
+  }
+}
+
+async function loadSavedHistory(button) {
+  if (!state.project || button.disabled) return;
+  const project = state.project;
+  const status = document.querySelector("#collection-status");
+  button.disabled = true;
+  if (status) status.textContent = "Loading saved records from local SQLite…";
+  try {
+    const response = await fetch(`/api/history/${encodeURIComponent(project.id)}`);
+    const payload = await response.json();
+    if (!response.ok) throw new Error(payload.error || `Could not load saved runs (HTTP ${response.status}).`);
+    if (state.project?.id !== project.id) return;
+    state.headers = payload.headers;
+    state.rows = payload.rows;
+    state.dataSource = payload.source;
+    state.sourceMessage = payload.message;
+    render();
+    runAnalysis();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Could not load saved runs.";
+    if (status && state.project?.id === project.id) status.textContent = message;
+    showToast(message);
+  } finally {
+    if (state.project?.id === project.id) {
+      const historyButton = document.querySelector("#load-history");
+      if (historyButton) historyButton.disabled = false;
+    }
+  }
+}
+
+function toggleAutomaticCollection(button) {
+  if (!state.project) return;
+  if (state.monitorTimer) {
+    stopAutomaticCollection();
+    button.textContent = "Start 60s refresh";
+    const status = document.querySelector("#collection-status");
+    if (status) status.textContent = "Automatic collection stopped.";
+    return;
+  }
+  const projectId = state.project.id;
+  state.monitorTimer = setInterval(() => {
+    if (state.project?.id !== projectId) {
+      stopAutomaticCollection();
+      return;
+    }
+    const collectButton = document.querySelector("#collect-live");
+    if (collectButton && !collectButton.disabled) collectLiveData(collectButton);
+  }, 60_000);
+  button.textContent = "Stop 60s refresh";
+  const status = document.querySelector("#collection-status");
+  if (status) status.textContent = "Automatic collection runs every 60 seconds while this workspace remains open.";
+  showToast("Automatic collection started");
+}
+
+function stopAutomaticCollection() {
+  if (!state.monitorTimer) return;
+  clearInterval(state.monitorTimer);
+  state.monitorTimer = null;
+}
 
 document.querySelector("#home-link").addEventListener("click", (event) => event.preventDefault());
 document.querySelector("#nav-projects").classList.add("is-active");

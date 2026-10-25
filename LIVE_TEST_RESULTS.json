@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-25",
+  "checks": [
+    {
+      "project": "academic-publications",
+      "status": "PASS",
+      "rows": 50,
+      "source": "OpenAlex scholarly works API"
+    },
+    {
+      "project": "api-aggregation",
+      "status": "PASS",
+      "rows": 7,
+      "source": "Open-Meteo forecast \u00b7 Warsaw and Open-Meteo air quality \u00b7 Warsaw"
+    },
+    {
+      "project": "automated-pipeline",
+      "status": "PASS",
+      "rows": 36,
+      "source": "BBC News RSS"
+    },
+    {
+      "project": "education-analytics",
+      "status": "PASS",
+      "rows": 31,
+      "source": "World Bank Open Data \u00b7 SE.SEC.ENRR"
+    },
+    {
+      "project": "fake-news",
+      "status": "PASS",
+      "rows": 20,
+      "source": "Full Fact + FactCheck.org RSS"
+    },
+    {
+      "project": "healthcare-mining",
+      "status": "PASS",
+      "rows": 49,
+      "source": "World Bank Open Data \u00b7 SP.DYN.LE00.IN"
+    },
+    {
+      "project": "job-listings",
+      "status": "PASS",
+      "rows": 10,
+      "source": "Remotive public jobs API"
+    },
+    {
+      "project": "market-intelligence",
+      "status": "PASS",
+      "rows": 50,
+      "source": "DummyJSON public demo API"
+    },
+    {
+      "project": "movie-insights",
+      "status": "PASS",
+      "rows": 22,
+      "source": "Studio Ghibli public film API"
+    },
+    {
+      "project": "news-headlines",
+      "status": "PASS",
+      "rows": 81,
+      "source": "BBC News + The Guardian RSS"
+    },
+    {
+      "project": "news-recommendations",
+      "status": "PASS",
+      "rows": 36,
+      "source": "BBC News RSS"
+    },
+    {
+      "project": "price-comparison",
+      "status": "PASS",
+      "rows": 50,
+      "source": "DummyJSON public demo API"
+    },
+    {
+      "project": "price-tracker",
+      "status": "PASS",
+      "rows": 50,
+      "source": "DummyJSON public demo API"
+    },
+    {
+      "project": "public-health",
+      "status": "PASS",
+      "rows": 49,
+      "source": "World Bank Open Data \u00b7 SP.DYN.LE00.IN"
+    },
+    {
+      "project": "realtime-monitor",
+      "status": "PASS",
+      "rows": 36,
+      "source": "BBC News RSS"
+    },
+    {
+      "project": "research-trends",
+      "status": "PASS",
+      "rows": 50,
+      "source": "OpenAlex scholarly works API"
+    },
+    {
+      "project": "review-sentiment",
+      "status": "PASS",
+      "rows": 1,
+      "source": "Local transparent word-list baseline"
+    },
+    {
+      "project": "selenium-scraper",
+      "status": "PASS",
+      "rows": 30,
+      "source": "Quotes to Scrape JavaScript practice site"
+    },
+    {
+      "project": "smart-cities",
+      "status": "PASS",
+      "rows": 48,
+      "source": "Open-Meteo air quality \u00b7 Warsaw"
+    },
+    {
+      "project": "social-trends",
+      "status": "PASS",
+      "rows": 50,
+      "source": "Hacker News search API (Algolia)"
+    },
+    {
+      "project": "stock-mining",
+      "status": "PASS",
+      "rows": 251,
+      "source": "Yahoo Finance chart data \u00b7 AAPL"
+    },
+    {
+      "project": "weather-analysis",
+      "status": "PASS",
+      "rows": 7,
+      "source": "Open-Meteo forecast \u00b7 Warsaw"
+    },
+    {
+      "project": "web-to-sql",
+      "status": "PASS",
+      "rows": 36,
+      "source": "BBC News RSS"
+    }
+  ],
+  "automated_tests": {
+    "command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
+    "passed": 17,
+    "failed": 0
+  },
+  "browser_checks": {
+    "passed": [
+      "All 23 workspaces: navigation, sample analysis, reset",
+      "Project search",
+      "Local CSV upload and analysis",
+      "Studio Ghibli filtered movie workflow",
+      "Hacker News topic workflow",
+      "Fact-check publisher feed workflow",
+      "Local sentiment workflow",
+      "Live RSS collection",
+      "SQLite saved history loaded in UI",
+      "One actual 60-second refresh and stop"
+    ],
+    "javascript_errors": []
+  },
+  "scope_notes": [
+    "Movie catalog limited to Studio Ghibli; catalog RT scores are 0-100 and may be outdated.",
+    "Community trends cover Hacker News.",
+    "Fact checks filter recent publisher feeds, not a full archive or automated truth verdict.",
+    "Live checks used temporary SQLite databases and did not write test records to the user database.",
+    "Results are a point-in-time check; external APIs may change or rate limit."
+  ]
+}
